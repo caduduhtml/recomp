@@ -1,0 +1,40 @@
+
+/* Extensões React da versão recodificada */
+.portal{min-height:100vh}
+.portal .card__logo img{max-height:100px;max-width:180px;object-fit:contain}
+.portal .card__link{border:0;background:transparent;cursor:pointer;text-align:left}
+.page-wrap{padding-top:72px;padding-bottom:90px;min-height:70vh}
+.page-wrap h1{margin-bottom:14px}
+.form-card{display:grid;gap:14px;max-width:680px;background:rgba(255,255,255,.04);border:1px solid var(--line,#ffffff18);border-radius:16px;padding:24px}
+.form-card input,.form-card textarea{width:100%;background:var(--surface,#101828);color:var(--text,#fff);border:1px solid var(--line2,#ffffff22);border-radius:10px;padding:12px 14px}
+.service-card{background:var(--surface,#101828);border:1px solid var(--line,#ffffff14);border-radius:16px;padding:24px;display:flex;flex-direction:column;gap:10px}
+.svc-grid{margin-top:28px}
+.svc-icon{font-size:28px}
+.order-row{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:18px 0;border-bottom:1px solid var(--line,#ffffff14)}
+.order-row div{display:flex;flex-direction:column;gap:4px}
+.cart-total{display:flex;justify-content:space-between;max-width:520px;font-size:1.1rem;padding:24px 0}
+.admin-page{padding-bottom:90px}
+.admin-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:28px 0}
+.admin-stat{background:var(--surface,#101828);border:1px solid var(--line,#ffffff14);border-radius:14px;padding:20px;display:flex;flex-direction:column}
+.admin-stat strong{font-size:1.8rem}.admin-stat span{color:var(--muted)}
+.admin-table{border:1px solid var(--line,#ffffff14);border-radius:14px;overflow:hidden}
+.admin-table h3{padding:18px;margin:0;border-bottom:1px solid var(--line,#ffffff14)}
+.admin-table>div{display:flex;justify-content:space-between;padding:14px 18px;border-bottom:1px solid var(--line,#ffffff14)}
+.admin-table>div:last-child{border:0}
+.site-footer .footer-grid{display:grid;grid-template-columns:2fr 1fr 1.5fr;gap:30px;padding:42px 0}
+.site-footer .footer-grid>div:nth-child(2){display:flex;flex-direction:column;gap:8px}
+.hero-visual{display:flex;align-items:center;justify-content:center}
+.hero-card{width:min(420px,100%);padding:30px;border:1px solid var(--line,#ffffff18);border-radius:22px;background:linear-gradient(145deg,rgba(25,211,255,.08),rgba(255,255,255,.02));box-shadow:0 30px 80px rgba(0,0,0,.25)}
+.hero-card h3{margin-top:18px;font-size:1.5rem}
+.hero-chip{display:inline-block;padding:7px 10px;border:1px solid rgba(25,211,255,.3);border-radius:999px;color:var(--accent);font-size:.72rem;font-weight:700}
+.hero-lines{display:grid;gap:8px;margin-top:28px}.hero-lines i{display:block;height:5px;border-radius:99px;background:linear-gradient(90deg,var(--accent),transparent)}.hero-lines i:nth-child(2){width:72%}.hero-lines i:nth-child(3){width:48%}
+.pgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin-top:26px}
+.pgrid .pcard{background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.pgrid .pimg{display:block;position:relative;height:220px;background:#fff;padding:22px}
+.pgrid .pimg img{width:100%;height:100%;object-fit:contain}
+.pgrid .pbody{padding:18px}
+.pgrid .pbrand{display:block;color:var(--muted);font-size:.74rem;text-transform:uppercase;letter-spacing:.06em;margin-bottom:7px}
+.pgrid .pname{display:block;font-weight:700;min-height:48px}.pgrid .pprice{display:flex;gap:9px;align-items:center;margin:12px 0 14px}.pgrid .price{font-weight:800}.pgrid .price-old{text-decoration:line-through;color:var(--muted);font-size:.82rem}.pgrid .tag{position:absolute;left:12px;top:12px;background:var(--accent2);padding:5px 8px;border-radius:999px;font-size:.7rem}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0}.chip{border:1px solid var(--line2);background:var(--surface);color:var(--muted);border-radius:999px;padding:8px 13px}.chip.active{color:var(--text);border-color:var(--accent);background:rgba(25,211,255,.08)}
+@media(max-width:900px){.pgrid{grid-template-columns:repeat(2,minmax(0,1fr))}.admin-grid{grid-template-columns:repeat(2,1fr)}.site-footer .footer-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:680px){.pgrid{grid-template-columns:1fr}.admin-grid{grid-template-columns:1fr 1fr}.site-footer .footer-grid{grid-template-columns:1fr}.page-wrap{padding-top:45px}.portal .topbar{display:block}.portal .menu{flex-wrap:wrap}.portal .board{padding-inline:16px}}
